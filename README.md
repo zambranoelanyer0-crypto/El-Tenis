@@ -1,1 +1,68 @@
-# El-Tenis
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Principal - Sitio de Tenis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e6f0ff, #b3d9ff);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: #003366;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ffffff;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 250px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+      color: #003366;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      color: #003366;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 Menú del Mundo del Tenis</h1>
+  <div class="menu">
+    <button onclick="window.location.href='tenis.html'">📖 Información del Tenis</button>
+    <button onclick="window.location.href='juego.html'">🎯 Juego de Sopa de Letras</button>
+    <button onclick="window.location.href='formulario.html'">📝 Formulario de Registro</button>
+  </div>
+
+  <footer>&copy; 2025 Sitio Web de Tenis</footer>
+</body>
+</html>
